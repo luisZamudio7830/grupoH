@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace winform_app
 {
@@ -20,7 +21,8 @@ namespace winform_app
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            s
+            string marca = textMarca.Text;
+            listaMarca.Items.Add(marca);
 
         }
 
@@ -46,6 +48,20 @@ namespace winform_app
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            string marcaDelete = textMarca.Text;
+
+
+
+        }
+
+        private void textMarca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listaMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
 
         }
     }

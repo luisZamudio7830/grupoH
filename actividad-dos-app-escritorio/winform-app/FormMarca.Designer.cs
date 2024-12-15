@@ -33,11 +33,12 @@
             this.textMarca = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.listaMarca = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(22, 190);
+            this.btnAdd.Location = new System.Drawing.Point(115, 98);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(114, 23);
             this.btnAdd.TabIndex = 0;
@@ -61,12 +62,13 @@
             this.textMarca.Name = "textMarca";
             this.textMarca.Size = new System.Drawing.Size(100, 20);
             this.textMarca.TabIndex = 6;
+            this.textMarca.TextChanged += new System.EventHandler(this.textMarca_TextChanged);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(175, 190);
+            this.btnUpdate.Location = new System.Drawing.Point(115, 127);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(96, 20);
+            this.btnUpdate.Size = new System.Drawing.Size(114, 20);
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Modificar";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -74,17 +76,28 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(308, 191);
+            this.btnDelete.Location = new System.Drawing.Point(115, 153);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(104, 21);
+            this.btnDelete.Size = new System.Drawing.Size(114, 21);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Eliminar";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // listaMarca
+            // 
+            this.listaMarca.HideSelection = false;
+            this.listaMarca.Location = new System.Drawing.Point(12, 202);
+            this.listaMarca.Name = "listaMarca";
+            this.listaMarca.Size = new System.Drawing.Size(427, 133);
+            this.listaMarca.TabIndex = 9;
+            this.listaMarca.UseCompatibleStateImageBehavior = false;
+            this.listaMarca.SelectedIndexChanged += new System.EventHandler(this.listaMarca_SelectedIndexChanged);
+            // 
             // Marca
             // 
             this.ClientSize = new System.Drawing.Size(496, 373);
+            this.Controls.Add(this.listaMarca);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.textMarca);
@@ -106,6 +119,7 @@
         private System.Windows.Forms.TextBox textMarca;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.ListView listaMarca;
     }
 }
 
