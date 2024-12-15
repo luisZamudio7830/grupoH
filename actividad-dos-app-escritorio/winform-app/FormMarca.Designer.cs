@@ -1,6 +1,6 @@
 ﻿namespace winform_app
 {
-    partial class Form1
+    partial class Marca
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,45 +29,83 @@
         private void InitializeComponent()
         {
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblName = new System.Windows.Forms.Label();
+            this.textMarca = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(154, 235);
+            this.btnAdd.Location = new System.Drawing.Point(22, 190);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(104, 21);
+            this.btnAdd.Size = new System.Drawing.Size(114, 23);
             this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "agregar";
+            this.btnAdd.Text = "Agregar";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button1
+            // lblName
             // 
-            this.button1.Location = new System.Drawing.Point(394, 246);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(65, 53);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(37, 13);
+            this.lblName.TabIndex = 4;
+            this.lblName.Text = "Marca";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
-            // Form1
+            // textMarca
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.textMarca.Location = new System.Drawing.Point(115, 53);
+            this.textMarca.Name = "textMarca";
+            this.textMarca.Size = new System.Drawing.Size(100, 20);
+            this.textMarca.TabIndex = 6;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(175, 190);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(96, 20);
+            this.btnUpdate.TabIndex = 7;
+            this.btnUpdate.Text = "Modificar";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(308, 191);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(104, 21);
+            this.btnDelete.TabIndex = 8;
+            this.btnDelete.Text = "Eliminar";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // Marca
+            // 
+            this.ClientSize = new System.Drawing.Size(496, 373);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.textMarca);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.btnAdd);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Marca";
+            this.Text = "Marca";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
+
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox textMarca;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 
