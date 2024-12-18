@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dominio;
 
 namespace winform_app
 {
@@ -16,7 +17,7 @@ namespace winform_app
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Marca());
+            Application.Run(new FormArticulo());
         }
     }
 }

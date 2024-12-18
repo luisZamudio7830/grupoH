@@ -38,7 +38,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(395, 131);
+            this.btnAdd.Location = new System.Drawing.Point(394, 94);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(115, 28);
             this.btnAdd.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(395, 165);
+            this.btnDelete.Location = new System.Drawing.Point(394, 128);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(115, 29);
             this.btnDelete.TabIndex = 0;
@@ -56,7 +56,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(397, 198);
+            this.btnUpdate.Location = new System.Drawing.Point(394, 163);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(112, 29);
             this.btnUpdate.TabIndex = 1;
@@ -67,9 +67,10 @@
             // listaCategoria
             // 
             this.listaCategoria.HideSelection = false;
-            this.listaCategoria.Location = new System.Drawing.Point(312, 250);
+            this.listaCategoria.Location = new System.Drawing.Point(254, 227);
+            this.listaCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.listaCategoria.Name = "listaCategoria";
-            this.listaCategoria.Size = new System.Drawing.Size(291, 180);
+            this.listaCategoria.Size = new System.Drawing.Size(415, 164);
             this.listaCategoria.TabIndex = 2;
             this.listaCategoria.UseCompatibleStateImageBehavior = false;
             // 
@@ -102,6 +103,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Name = "FormCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCategoria";
             this.Load += new System.EventHandler(this.FormCategoria_Load);
             this.ResumeLayout(false);
